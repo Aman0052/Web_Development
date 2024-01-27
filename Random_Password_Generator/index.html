@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./styles.css">
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <h1>Password Generator</h1>
+
+        <div class="display-container">
+            <input readonly placeholder="PASSWORD" class="display" data-passwordDisplay>
+
+            <button class="copyBtn" data-copy>
+                <span class="tooltip" data-Copymsg></span>
+                <img src="./cpy_btn.png" alt="copy" width="40" height="40">
+            </button>
+        </div>
+
+        <div class="input-container">
+
+            <div class="length-container">
+            <p>Password Length</p>
+            <p data-lengthnum>0</p>
+        </div>
+        <!--Slider-->
+        
+        <input type="range" min="0" max="20" class="slider" step="1" data-lengthslider>
+           
+        <!--Checkboxes-->
+        <div class="check">
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">Includes Uppercase Letters</label>
+        </div>
+
+        <div class="check">
+            <input type="checkbox" id="lowercase">
+            <label for="lowercase">Includes Lowercase letters</label>
+        </div>
+
+        <div class="check">
+            <input type="checkbox" id="numbers">
+            <label for="numbers">Includes Numbers </label>
+        </div>
+
+        <div class="check">
+            <input type="checkbox" id="symbols">
+            <label for="symbols">Includes Symbols </label>
+        </div>
+
+         <!-- strength section-->
+         <div class="strength-container">
+            <p>Strength</p>
+            <div class="indicator" data-indicator></div>
+        </div>
+
+        <!-- generate password-->
+        <button class="generateButton">Generate Password</button>
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

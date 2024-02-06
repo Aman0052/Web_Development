@@ -27,12 +27,10 @@ setIndicator("#ccc");
 function handleSlider() {
     inputSlider.value = passwordLength;
     lengthDisplay.innerText = passwordLength; 
-    //or kuch bhi karna chahiye ? - HW
 }
 
 function setIndicator(color) {
     indicator.style.backgroundColor = color;
-    //shadow - HW
     indicator.style.boxShadow=`0px 0px 12px 1px ${color}`;
 }
 

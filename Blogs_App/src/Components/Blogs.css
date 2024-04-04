@@ -1,0 +1,32 @@
+.title{
+    color: rgb(238, 17, 17);
+    font-size: 20px;
+}
+
+.BD{
+    width: 91.666667%;
+    max-width: 630px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+/* .ac{
+    font-size: 20px;
+} */
+.author{
+    font-family: 'Times New Roman', Times, serif;
+}
+.cate{
+    text-decoration: underline;
+    font: bold;
+}
+.date{
+    font-size: 15px;
+}
+.tags{
+    color: rgb(22, 22, 243);
+}
